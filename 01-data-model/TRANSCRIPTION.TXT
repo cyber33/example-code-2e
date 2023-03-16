@@ -386,3 +386,131 @@ C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-m
 C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>notepad TRANSCRIPTION.TXT
 
 C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>notepad TRANSCRIPTION.TXT
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>pip install pytest nbval
+Collecting pytest
+  Downloading pytest-7.2.2-py3-none-any.whl (317 kB)
+     |████████████████████████████████| 317 kB 3.3 MB/s
+Collecting nbval
+  Downloading nbval-0.10.0-py2.py3-none-any.whl (24 kB)
+Requirement already satisfied: colorama in c:\users\mark_\appdata\local\programs\python\python39\lib\site-packages (from pytest) (0.4.4)
+Collecting pluggy<2.0,>=0.12
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: attrs>=19.2.0 in c:\users\mark_\appdata\local\programs\python\python39\lib\site-packages (from pytest) (21.4.0)
+Requirement already satisfied: packaging in c:\users\mark_\appdata\local\programs\python\python39\lib\site-packages (from pytest) (21.3)
+Collecting tomli>=1.0.0
+  Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting iniconfig
+  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting exceptiongroup>=1.0.0rc8
+  Downloading exceptiongroup-1.1.1-py3-none-any.whl (14 kB)
+Collecting ipykernel
+  Downloading ipykernel-6.21.3-py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 328 kB/s
+Collecting jupyter-client
+  Downloading jupyter_client-8.0.3-py3-none-any.whl (102 kB)
+     |████████████████████████████████| 102 kB 6.4 MB/s
+Collecting coverage
+  Downloading coverage-7.2.2-cp39-cp39-win_amd64.whl (202 kB)
+     |████████████████████████████████| 202 kB ...
+Collecting nbformat
+  Downloading nbformat-5.7.3-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 3.4 MB/s
+Collecting tornado>=6.1
+  Downloading tornado-6.2-cp37-abi3-win_amd64.whl (425 kB)
+     |████████████████████████████████| 425 kB 6.8 MB/s
+Collecting matplotlib-inline>=0.1
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Collecting pyzmq>=20
+  Downloading pyzmq-25.0.1-cp39-cp39-win_amd64.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 6.4 MB/s
+Collecting psutil
+  Downloading psutil-5.9.4-cp36-abi3-win_amd64.whl (252 kB)
+     |████████████████████████████████| 252 kB 6.4 MB/s
+Collecting traitlets>=5.4.0
+  Downloading traitlets-5.9.0-py3-none-any.whl (117 kB)
+     |████████████████████████████████| 117 kB 3.3 MB/s
+Collecting comm>=0.1.1
+  Downloading comm-0.1.2-py3-none-any.whl (6.5 kB)
+Collecting jupyter-core!=5.0.*,>=4.12
+  Downloading jupyter_core-5.3.0-py3-none-any.whl (93 kB)
+     |████████████████████████████████| 93 kB 592 kB/s
+Collecting debugpy>=1.6.5
+  Downloading debugpy-1.6.6-cp39-cp39-win_amd64.whl (4.8 MB)
+     |████████████████████████████████| 4.8 MB 6.8 MB/s
+Collecting ipython>=7.23.1
+  Downloading ipython-8.11.0-py3-none-any.whl (793 kB)
+     |████████████████████████████████| 793 kB 6.4 MB/s
+Collecting stack-data
+  Downloading stack_data-0.6.2-py3-none-any.whl (24 kB)
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting decorator
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting jedi>=0.16
+  Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 6.8 MB/s
+Collecting pygments>=2.4.0
+  Downloading Pygments-2.14.0-py3-none-any.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 6.4 MB/s
+Collecting prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30
+  Downloading prompt_toolkit-3.0.38-py3-none-any.whl (385 kB)
+     |████████████████████████████████| 385 kB 6.8 MB/s
+Collecting parso<0.9.0,>=0.8.0
+  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+     |████████████████████████████████| 100 kB 3.0 MB/s
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\mark_\appdata\local\programs\python\python39\lib\site-packages (from jupyter-client->nbval) (2.8.2)
+Collecting importlib-metadata>=4.8.3
+  Downloading importlib_metadata-6.0.0-py3-none-any.whl (21 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Collecting platformdirs>=2.5
+  Downloading platformdirs-3.1.1-py3-none-any.whl (14 kB)
+Collecting pywin32>=300
+  Downloading pywin32-305-cp39-cp39-win_amd64.whl (12.2 MB)
+     |████████████████████████████████| 12.2 MB 6.4 MB/s
+Collecting wcwidth
+  Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+Requirement already satisfied: six>=1.5 in c:\users\mark_\appdata\local\programs\python\python39\lib\site-packages (from python-dateutil>=2.8.2->jupyter-client->nbval) (1.15.0)
+Collecting jsonschema>=2.6
+  Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+     |████████████████████████████████| 90 kB 4.8 MB/s
+Collecting fastjsonschema
+  Downloading fastjsonschema-2.16.3-py3-none-any.whl (23 kB)
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#       new file:   TRANSCRIPTION.TXT
+#
+
+Executed instructions in README.md for example-code-2e\01-data-model
+an added TRANSCRIPTION.TXT to document
+
+
+~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  ~                                                                                                                                                                                                                  C:/Users/mark_/Data/Reinvent/Companies/Nelson Connects/example-code-2e/.git/COMMIT_EDITMSG[+] [unix] (11:51 16/03/2023)                                                                                  15,0-1 All[master 0807cd6] Executed instructions in README.md for example-code-2e\01-data-model an added TRANSCRIPTION.TXT to document
+ 1 file changed, 388 insertions(+)
+ create mode 100644 01-data-model/TRANSCRIPTION.TXT
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.96 KiB | 1011.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/cyber33/example-code-2e
+   28d6d03..0807cd6  master -> master
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>
