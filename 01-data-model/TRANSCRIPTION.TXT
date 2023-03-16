@@ -1,0 +1,388 @@
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects>git clone https://github.com/cyber33/example-code-2e
+Cloning into 'example-code-2e'...
+remote: Enumerating objects: 3513, done.
+Receiving objects: 100% (3513/3513), 13.38 MiB | 10.27 MiB/s, done.
+Resolving deltas: 100% (1900/1900), done.elta 0), pack-reused 3513 esolving deltas:   0% (0/1900)
+
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects>dir
+ Volume in drive C is Acer
+ Volume Serial Number is AE3D-6D4D
+
+ Directory of C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects
+
+03/16/2023  11:22 AM    <DIR>          .
+03/09/2023  11:13 AM    <DIR>          ..
+03/16/2023  11:23 AM    <DIR>          example-code-2e
+03/16/2023  11:16 AM             2,446 example.py
+03/13/2023  09:00 AM    <DIR>          test
+03/13/2023  08:55 AM                 5 test.txt
+03/09/2023  10:53 AM           192,874 Transcriptions - Kubernetes Up and Runming 3rd ED Companion Labs.txt
+               3 File(s)        195,325 bytes
+               4 Dir(s)   2,669,465,600 bytes free
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects>cd example-code-2e
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e>dir
+ Volume in drive C is Acer
+ Volume Serial Number is AE3D-6D4D
+
+ Directory of C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e
+
+03/16/2023  11:23 AM    <DIR>          .
+03/16/2023  11:22 AM    <DIR>          ..
+03/16/2023  11:23 AM             1,152 .gitignore
+03/16/2023  11:23 AM    <DIR>          01-data-model
+03/16/2023  11:23 AM    <DIR>          02-array-seq
+03/16/2023  11:23 AM    <DIR>          03-dict-set
+03/16/2023  11:23 AM    <DIR>          04-text-byte
+03/16/2023  11:23 AM    <DIR>          05-data-classes
+03/16/2023  11:23 AM    <DIR>          06-obj-ref
+03/16/2023  11:23 AM    <DIR>          07-1class-func
+03/16/2023  11:23 AM    <DIR>          08-def-type-hints
+03/16/2023  11:23 AM    <DIR>          09-closure-deco
+03/16/2023  11:23 AM    <DIR>          10-dp-1class-func
+03/16/2023  11:23 AM    <DIR>          11-pythonic-obj
+03/16/2023  11:23 AM    <DIR>          12-seq-hacking
+03/16/2023  11:23 AM    <DIR>          13-protocol-abc
+03/16/2023  11:23 AM    <DIR>          14-inheritance
+03/16/2023  11:23 AM    <DIR>          15-more-types
+03/16/2023  11:23 AM    <DIR>          16-op-overloading
+03/16/2023  11:23 AM    <DIR>          17-it-generator
+03/16/2023  11:23 AM    <DIR>          18-with-match
+03/16/2023  11:23 AM    <DIR>          19-concurrency
+03/16/2023  11:23 AM    <DIR>          20-executors
+03/16/2023  11:23 AM    <DIR>          21-async
+03/16/2023  11:23 AM    <DIR>          22-dyn-attr-prop
+03/16/2023  11:23 AM    <DIR>          23-descriptor
+03/16/2023  11:23 AM    <DIR>          24-class-metaprog
+03/16/2023  11:23 AM             1,105 LICENSE
+03/16/2023  11:23 AM    <DIR>          links
+03/16/2023  11:23 AM                39 pytest.ini
+03/16/2023  11:23 AM             2,461 README.md
+               4 File(s)          4,757 bytes
+              27 Dir(s)   2,669,461,504 bytes free
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e>cd 01-data-model
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>type README.md
+# The Python Data Model
+
+Sample code for Chapter 1 of _Fluent Python 2e_ by Luciano Ramalho (O'Reilly, 2020)
+
+## Running the tests
+
+### Doctests
+
+Use Python's standard ``doctest`` module to check stand-alone doctest file:
+
+    $ python3 -m doctest frenchdeck.doctest -v
+
+And to check doctests embedded in a module:
+
+    $ python3 -m doctest vector2d.py -v
+
+### Jupyter Notebook
+
+Install ``pytest`` and the ``nbval`` plugin:
+
+    $ pip install pytest nbval
+
+Run:
+
+    $ pytest --nbval
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>cat frenchdeck.doctest
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>type frenchdeck.doctest
+>>> from frenchdeck import FrenchDeck, Card
+>>> beer_card = Card('7', 'diamonds')
+>>> beer_card
+Card(rank='7', suit='diamonds')
+>>> deck = FrenchDeck()
+>>> len(deck)
+52
+>>> deck[:3]
+[Card(rank='2', suit='spades'), Card(rank='3', suit='spades'), Card(rank='4', suit='spades')]
+>>> deck[12::13]
+[Card(rank='A', suit='spades'), Card(rank='A', suit='diamonds'), Card(rank='A', suit='clubs'), Card(rank='A', suit='hearts')]
+>>> Card('Q', 'hearts') in deck
+True
+>>> Card('Z', 'clubs') in deck
+False
+>>> for card in deck:  # doctest: +ELLIPSIS
+...   print(card)
+Card(rank='2', suit='spades')
+Card(rank='3', suit='spades')
+Card(rank='4', suit='spades')
+...
+>>> for card in reversed(deck):  # doctest: +ELLIPSIS
+...   print(card)
+Card(rank='A', suit='hearts')
+Card(rank='K', suit='hearts')
+Card(rank='Q', suit='hearts')
+...
+>>> for n, card in enumerate(deck, 1):  # doctest: +ELLIPSIS
+...   print(n, card)
+1 Card(rank='2', suit='spades')
+2 Card(rank='3', suit='spades')
+3 Card(rank='4', suit='spades')
+...
+>>> suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
+>>> def spades_high(card):
+...     rank_value = FrenchDeck.ranks.index(card.rank)
+...     return rank_value * len(suit_values) + suit_values[card.suit]
+
+Rank test:
+
+>>> spades_high(Card('2', 'clubs'))
+0
+>>> spades_high(Card('A', 'spades'))
+51
+
+>>> for card in sorted(deck, key=spades_high):  # doctest: +ELLIPSIS
+...      print(card)
+Card(rank='2', suit='clubs')
+Card(rank='2', suit='diamonds')
+Card(rank='2', suit='hearts')
+...
+Card(rank='A', suit='diamonds')
+Card(rank='A', suit='hearts')
+Card(rank='A', suit='spades')
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>type vector2d.py
+"""
+vector2d.py: a simplistic class demonstrating some special methods
+
+It is simplistic for didactic reasons. It lacks proper error handling,
+especially in the ``__add__`` and ``__mul__`` methods.
+
+This example is greatly expanded later in the book.
+
+Addition::
+
+    >>> v1 = Vector(2, 4)
+    >>> v2 = Vector(2, 1)
+    >>> v1 + v2
+    Vector(4, 5)
+
+Absolute value::
+
+    >>> v = Vector(3, 4)
+    >>> abs(v)
+    5.0
+
+Scalar multiplication::
+
+    >>> v * 3
+    Vector(9, 12)
+    >>> abs(v * 3)
+    15.0
+
+"""
+
+
+import math
+
+class Vector:
+
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return f'Vector({self.x!r}, {self.y!r})'
+
+    def __abs__(self):
+        return math.hypot(self.x, self.y)
+
+    def __bool__(self):
+        return bool(abs(self))
+
+    def __add__(self, other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return Vector(x, y)
+
+    def __mul__(self, scalar):
+        return Vector(self.x * scalar, self.y * scalar)
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>py  -m doctest frenchdeck.doctest -v
+Trying:
+    from frenchdeck import FrenchDeck, Card
+Expecting nothing
+ok
+Trying:
+    beer_card = Card('7', 'diamonds')
+Expecting nothing
+ok
+Trying:
+    beer_card
+Expecting:
+    Card(rank='7', suit='diamonds')
+ok
+Trying:
+    deck = FrenchDeck()
+Expecting nothing
+ok
+Trying:
+    len(deck)
+Expecting:
+    52
+ok
+Trying:
+    deck[:3]
+Expecting:
+    [Card(rank='2', suit='spades'), Card(rank='3', suit='spades'), Card(rank='4', suit='spades')]
+ok
+Trying:
+    deck[12::13]
+Expecting:
+    [Card(rank='A', suit='spades'), Card(rank='A', suit='diamonds'), Card(rank='A', suit='clubs'), Card(rank='A', suit='hearts')]
+ok
+Trying:
+    Card('Q', 'hearts') in deck
+Expecting:
+    True
+ok
+Trying:
+    Card('Z', 'clubs') in deck
+Expecting:
+    False
+ok
+Trying:
+    for card in deck:  # doctest: +ELLIPSIS
+      print(card)
+Expecting:
+    Card(rank='2', suit='spades')
+    Card(rank='3', suit='spades')
+    Card(rank='4', suit='spades')
+    ...
+ok
+Trying:
+    for card in reversed(deck):  # doctest: +ELLIPSIS
+      print(card)
+Expecting:
+    Card(rank='A', suit='hearts')
+    Card(rank='K', suit='hearts')
+    Card(rank='Q', suit='hearts')
+    ...
+ok
+Trying:
+    for n, card in enumerate(deck, 1):  # doctest: +ELLIPSIS
+      print(n, card)
+Expecting:
+    1 Card(rank='2', suit='spades')
+    2 Card(rank='3', suit='spades')
+    3 Card(rank='4', suit='spades')
+    ...
+ok
+Trying:
+    suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
+Expecting nothing
+ok
+Trying:
+    def spades_high(card):
+        rank_value = FrenchDeck.ranks.index(card.rank)
+        return rank_value * len(suit_values) + suit_values[card.suit]
+Expecting nothing
+ok
+Trying:
+    spades_high(Card('2', 'clubs'))
+Expecting:
+    0
+ok
+Trying:
+    spades_high(Card('A', 'spades'))
+Expecting:
+    51
+ok
+Trying:
+    for card in sorted(deck, key=spades_high):  # doctest: +ELLIPSIS
+         print(card)
+Expecting:
+    Card(rank='2', suit='clubs')
+    Card(rank='2', suit='diamonds')
+    Card(rank='2', suit='hearts')
+    ...
+    Card(rank='A', suit='diamonds')
+    Card(rank='A', suit='hearts')
+    Card(rank='A', suit='spades')
+ok
+1 items passed all tests:
+  17 tests in frenchdeck.doctest
+17 tests in 1 items.
+17 passed and 0 failed.
+Test passed.
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>py -m doctest vector2d.py -v
+Trying:
+    v1 = Vector(2, 4)
+Expecting nothing
+ok
+Trying:
+    v2 = Vector(2, 1)
+Expecting nothing
+ok
+Trying:
+    v1 + v2
+Expecting:
+    Vector(4, 5)
+ok
+Trying:
+    v = Vector(3, 4)
+Expecting nothing
+ok
+Trying:
+    abs(v)
+Expecting:
+    5.0
+ok
+Trying:
+    v * 3
+Expecting:
+    Vector(9, 12)
+ok
+Trying:
+    abs(v * 3)
+Expecting:
+    15.0
+ok
+7 items had no tests:
+    vector2d.Vector
+    vector2d.Vector.__abs__
+    vector2d.Vector.__add__
+    vector2d.Vector.__bool__
+    vector2d.Vector.__init__
+    vector2d.Vector.__mul__
+    vector2d.Vector.__repr__
+1 items passed all tests:
+   7 tests in vector2d
+7 tests in 8 items.
+7 passed and 0 failed.
+Test passed.
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>dir
+ Volume in drive C is Acer
+ Volume Serial Number is AE3D-6D4D
+
+ Directory of C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model
+
+03/16/2023  11:42 AM    <DIR>          .
+03/16/2023  11:23 AM    <DIR>          ..
+03/16/2023  11:23 AM            15,445 data-model.ipynb
+03/16/2023  11:23 AM             1,636 frenchdeck.doctest
+03/16/2023  11:23 AM               504 frenchdeck.py
+03/16/2023  11:23 AM               509 README.md
+03/16/2023  11:23 AM               103 test.sh
+03/16/2023  11:23 AM               193 vector2d.doctest
+03/16/2023  11:23 AM             1,065 vector2d.py
+03/16/2023  11:43 AM    <DIR>          __pycache__
+               7 File(s)         19,455 bytes
+               3 Dir(s)   2,824,331,264 bytes free
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>notepad TRANSCRIPTION.TXT
+
+C:\Users\mark_\Data\Reinvent\Companies\Nelson Connects\example-code-2e\01-data-model>
